@@ -2,6 +2,9 @@ package com.api.tests;
 
 import com.api.automation.Client.UserClient;
 import com.api.pojo.UserResponse;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,6 +13,9 @@ public class UserApiTest {
 
     UserClient userClient = new UserClient();
 
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Validate user API response")
     @Test
     public void validateUser()
     {
@@ -24,6 +30,9 @@ public class UserApiTest {
 
     }
 
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Validate user API response")
     @Test
     public void invalidUserId()
     {
@@ -33,6 +42,9 @@ public class UserApiTest {
     }
 
 
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Validate user API response")
     @Test
     public void getUserNotFound()
     {
