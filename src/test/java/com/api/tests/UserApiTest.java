@@ -14,8 +14,7 @@ public class UserApiTest {
     UserClient userClient = new UserClient();
 
 
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Validate user API response")
+
     @Test
     public void validateUser()
     {
@@ -31,8 +30,7 @@ public class UserApiTest {
     }
 
 
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Validate user API response")
+
     @Test
     public void invalidUserId()
     {
@@ -43,8 +41,7 @@ public class UserApiTest {
 
 
 
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Validate user API response")
+
     @Test
     public void getUserNotFound()
     {
